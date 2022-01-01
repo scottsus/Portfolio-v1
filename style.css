@@ -1,0 +1,648 @@
+/** Reset CSS **/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+    /* height: 3000px; */
+}
+
+.loader
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p
+{
+    line-height: 2;
+}
+
+a, a:hover
+{
+    text-decoration: none;
+}
+
+h3
+{
+    font-size: 36px;
+}
+
+h5
+{
+    font-size: 22px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: bold;
+    color: #333;
+}
+
+.section-padding
+{
+    padding: 120px 0;
+}
+
+.full-width
+{
+    width: 100%;
+}
+
+.primary
+{
+    color: #E84188;
+}
+
+a, a:hover
+{
+    color: #fff;
+}
+
+.svg-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.svg-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/** Header Styles **/
+
+header
+{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+a.navbar-brand
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar
+{
+    padding: 25px 0px;
+}
+
+nav a, nav a:hover
+{
+    color: #fff;
+}
+
+#menu a
+{
+    color: #fff;
+}
+
+li.nav-item a.nav-link
+{
+    position: relative;
+    display: inline-block;
+}
+
+li.nav-item a.nav-link::after
+{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+li.nav-item.active a.nav-link::after
+{
+    width: 100%;
+}
+
+li.nav-item a.nav-link:hover::after
+{
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    padding: 0;
+}
+
+li.nav-item
+{
+    margin: 0 15px;
+}
+
+li.nav-item:last-child
+{
+    margin-right: 0;
+}
+
+.navbar-toggler-icon
+{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/** Main CSS Styles **/
+
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/Sentosa\ Fire\ Station.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.main::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.main-content
+{
+    z-index: 1;
+}
+
+.main-content .welcome
+{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-content .type
+{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.main-content .social-icons
+{
+    margin-top: 20px;
+}
+
+.main-content .social-icons a
+{
+    padding: 0 10px;
+    color: #fff;
+}
+
+.main-content .social-icons a:hover
+{
+    color: #fff;
+}
+
+.cta
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.cta-portfolio
+{
+    border: 1px solid #e84118;
+}
+
+.cta-portfolio::before
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e84118;
+    content: '';
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.cta-portfolio:hover
+{
+    border-color: #e84118;
+
+}
+
+.cta-portfolio:hover::before
+{
+    left: 100%;    
+}
+
+.cta-contact
+{
+    border: 1px solid #fff;
+}
+
+.cta-contact::after
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    content: '';
+    background-color: #E84118;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.cta-contact:hover::after
+{
+    left: 0;
+}
+
+.cta-contact:hover
+{
+    border-color: #e84118;
+}
+
+canvas
+{
+    display: block;
+}
+
+#myparticles
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.type .mytext
+{
+    font-weight: bold;
+}
+
+
+/** About Styles **/
+
+.about img
+{
+    width: 100%;
+}
+
+.about h3
+{
+    margin-bottom: 15px;
+}
+
+.about h5
+{
+    margin-bottom: 20px;
+}
+
+.about-social-icons
+{
+    margin-top: 24px;
+}
+
+.about-social-icons a
+{
+    color: #333;
+    margin: 0 10px;
+}
+
+.about-contact
+{
+    color: #333;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #333;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-contact::after
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    content: '';
+    background-color: #333;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.about-contact:hover::after
+{
+    left: 0;
+}
+
+
+/** Experience and Skills Styles **/
+
+.exp-skills
+{
+    background: url(imgs/Technical\ Skills.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #ddd;
+    z-index: -2;
+}
+
+.exp-skills::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,98,102,0.9);
+    z-index: -1;
+}
+
+.exp-skills .technicals
+{
+    width: 100%;
+    position: relative;
+}
+
+.exp-skills .technicals::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #fff;
+}
+
+.exp-skills h3, .exp-skills h5
+{
+    color: #fff;
+}
+
+.exp-skills strong, .exp-skills em
+{
+    display: inline-block;
+}
+
+.exp-skills h5
+{
+    margin-top: 30px;
+}
+
+.exp-skills ul
+{
+    list-style: none;
+}
+
+.exp-skills h6
+{
+    color: #ddd;
+}
+
+.skills h6
+{
+    margin: 30px 0;
+}
+
+.progress-content
+{
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+
+.skill-progress
+{
+    height: 100%;
+    background-color: #e84118;
+    width: 1%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.skill-progress::before
+{
+    position: absolute;
+    top: -40px;
+    right: -7px;
+    content: attr(data-progress);
+    color: #333;
+    background-color: #fff;
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.skill-progress::after
+{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: -15px;
+    right: 0px;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 8px solid #fff;
+}
+
+
+/** Service Styles **/
+
+.services-content
+{
+    margin-top: 60px;
+}
+
+.service-single .service-name
+{
+    margin: 30px 0;
+}
+
+.service-icon
+{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.service-icon .cta-contact::after
+{
+    transform:scale(1)rotateY(0deg);
+    transition: all 0.5s ease;
+}
+
+.service-single
+{
+    border: 1px solid #ddd;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.services-content .row:nth-child(2)
+{
+    margin-top: 20px;
+}
+
+.service-single:hover
+{
+    background-color: #333;
+    color: #ddd;
+}
+
+.service-single:hover h5
+{
+    color: #fff;
+}
+
+.service-single:hover .service-icon
+{
+    color: #333;
+    background-color: #fff;
+}
+
+.service-single:hover .service-icon .fa
+{
+    transform:scale(1.2)rotateY(180deg);
+}
+
+
+/** Contact Styles **/
+
+.contact
+{
+    position: relative;
+    background: url('imgs/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ddd;
+    z-index: -2;
+}
+
+.contact h3
+{
+    color: #fff;
+}
+
+.contact:before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 54, 64, 0.85);
+    z-index: -1;
+}
+
+.contact-top, .contact-form
+{
+    margin-top: 60px;
+}
+
+.contact i.fa
+{
+    margin-right: 10px;
+}
+
+.contact-top h7
+{
+    font-weight: bold;
+}
+
+.contact-form input, .form-floating textarea
+{
+    width: 100%;
+    /* background-color: transparent; */
+    color: #ddd;
+}
+
+.contact-form label
+{
+    font-weight: bold;
+}
+
+.form-floating textarea
+{
+    margin: 20px 0;
+}
