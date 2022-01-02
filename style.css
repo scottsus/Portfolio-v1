@@ -11,13 +11,14 @@
     -o-transition: all 0.3s ease;
 }
 
-body
+#forScrollbar
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: #777;
-    line-height: 1.5;
-    /* height: 3000px; */
+    /* position:absolute; */ /* This line disables other JS code */
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    overflow: scroll;
 }
 
 .loader
@@ -34,6 +35,18 @@ body
     justify-content: center;
 }
 
+::selection {
+    background: #ffb7b7;
+  }
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
 p
 {
     line-height: 2;
@@ -41,12 +54,17 @@ p
 
 a, a:hover
 {
+    color: #fff;
     text-decoration: none;
+}
+
+h2{
+    font-size: 36px;
 }
 
 h3
 {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 h5
@@ -62,43 +80,12 @@ h1, h2, h3, h4, h5, h6
 
 .section-padding
 {
-    padding: 120px 0;
+    padding: 20px 0;
 }
 
 .full-width
 {
     width: 100%;
-}
-
-.primary
-{
-    color: #E84188;
-}
-
-a, a:hover
-{
-    color: #fff;
-}
-
-.svg-top {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.svg-bottom {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.overlay
-{
-    background-color: rgba(0,0,0,0.8);
 }
 
 
@@ -184,6 +171,67 @@ li.nav-item:last-child
 }
 
 
+/** Social Icons **/
+
+.social-icons
+{
+    margin-top: 30px;
+}
+
+.social-icons a
+{
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.fa-github
+{
+    color: rgb(173, 13, 147);
+}
+
+.fa-google-plus
+{
+    color: rgb(240, 206, 54);
+}
+
+.fa-facebook
+{
+    color:rgb(59, 59, 221);
+}
+
+.fa-linkedin
+{
+    color:rgb(59, 221, 221);
+}
+
+.social-icons a i:hover
+{
+    color: #fff;
+}
+
+.technicals h3
+{
+    margin-bottom: 50px;
+}
+
+.first-choice, .used-before, .know-how
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.logo
+{
+    width: 100px;
+    margin: 20px 30px;
+}
+
+#heroku, #vscode
+{
+    height: 80px;
+}
+
+
 /** Main CSS Styles **/
 
 .main
@@ -227,102 +275,6 @@ li.nav-item:last-child
     margin-top: 20px;
 }
 
-.main-content .social-icons
-{
-    margin-top: 20px;
-}
-
-.main-content .social-icons a
-{
-    padding: 0 10px;
-    color: #fff;
-}
-
-.main-content .social-icons a:hover
-{
-    color: #fff;
-}
-
-.cta
-{
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 10px 60px;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 40px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
-
-.cta-portfolio
-{
-    border: 1px solid #e84118;
-}
-
-.cta-portfolio::before
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e84118;
-    content: '';
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    z-index: -1;
-}
-
-.cta-portfolio:hover
-{
-    border-color: #e84118;
-
-}
-
-.cta-portfolio:hover::before
-{
-    left: 100%;    
-}
-
-.cta-contact
-{
-    border: 1px solid #fff;
-}
-
-.cta-contact::after
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    content: '';
-    background-color: #E84118;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    z-index: -1;
-}
-
-.cta-contact:hover::after
-{
-    left: 0;
-}
-
-.cta-contact:hover
-{
-    border-color: #e84118;
-}
-
 canvas
 {
     display: block;
@@ -360,31 +312,19 @@ canvas
     margin-bottom: 20px;
 }
 
-.about-social-icons
-{
-    margin-top: 24px;
-}
-
-.about-social-icons a
-{
-    color: #333;
-    margin: 0 10px;
-}
-
-.about-contact
+.about
 {
     color: #333;
     padding: 10px 60px;
     font-size: 15px;
     font-weight: bold;
     display: inline-block;
-    border: 1px solid #333;
     margin-top: 40px;
     position: relative;
     overflow: hidden;
 }
 
-.about-contact::after
+.about::after
 {
     position: absolute;
     width: 100%;
@@ -406,69 +346,51 @@ canvas
 }
 
 
-/** Experience and Skills Styles **/
+/** Overview Styles **/
 
-.exp-skills
+.overview-skills
 {
-    background: url(imgs/Technical\ Skills.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
-    color: #ddd;
-    z-index: -2;
-}
-
-.exp-skills::before
-{
-    position: absolute;
-    content: '';
-    width: 100%;
+    width: 90%;
     height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,98,102,0.9);
-    z-index: -1;
+    margin: 5px auto;
+    border:2px solid rgba(237, 111, 125, 1.0);
+    border-radius: 10px;
+    color: #ddd;
 }
 
-.exp-skills .technicals
+.overview-skills .container
 {
-    width: 100%;
-    position: relative;
+    height: 100%;
 }
 
-.exp-skills .technicals::before
+.overview-header
 {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: -5px;
-    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.exp-skills h3, .exp-skills h5
+.overview-skills h3, .overview-skills h5
 {
-    color: #fff;
+    color: #333;
 }
 
-.exp-skills strong, .exp-skills em
+.overview-skills strong, .overview-skills em
 {
     display: inline-block;
 }
 
-.exp-skills h5
+.overview-skills h5
 {
     margin-top: 30px;
 }
 
-.exp-skills ul
+.overview-skills ul
 {
     list-style: none;
 }
 
-.exp-skills h6
+.overview-skills h6
 {
     color: #ddd;
 }
@@ -478,63 +400,32 @@ canvas
     margin: 30px 0;
 }
 
-.progress-content
-{
-    width: 100%;
-    height: 20px;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 20px;
-}
 
-.skill-progress
+/** MyProjects Styles **/
+
+.myprojects
 {
-    height: 100%;
-    background-color: #e84118;
-    width: 1%;
-    border-radius: 20px;
     position: relative;
-}
-
-.skill-progress::before
-{
-    position: absolute;
-    top: -40px;
-    right: -7px;
-    content: attr(data-progress);
-    color: #333;
-    background-color: #fff;
-    padding: 1px 5px;
-    font-size: 12px;
+    width: 90%;
+    height: 100%;
+    margin: 5px auto;
+    border: 2px solid rgba(114, 172, 194, 1.0);
     border-radius: 10px;
+    margin-top: 50px;
+    color: #ddd;
 }
 
-.skill-progress::after
-{
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    top: -15px;
-    right: 0px;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-top: 8px solid #fff;
-}
-
-
-/** Service Styles **/
-
-.services-content
+.myprojects-content
 {
     margin-top: 60px;
 }
 
-.service-single .service-name
+.project-single .project-name
 {
     margin: 30px 0;
 }
 
-.service-icon
+.project-icon
 {
     width: 60px;
     height: 60px;
@@ -544,44 +435,67 @@ canvas
     border-radius: 50%;
 }
 
-.service-icon .cta-contact::after
+.project-icon .cta-contact::after
 {
     transform:scale(1)rotateY(0deg);
     transition: all 0.5s ease;
 }
 
-.service-single
+.project-single
 {
     border: 1px solid #ddd;
+    background-color: rgb(52,73,102);
     padding: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.services-content .row:nth-child(2)
+.myprojects-content .row:nth-child(2)
 {
     margin-top: 20px;
 }
 
-.service-single:hover
+.project-single:hover
 {
     background-color: #333;
     color: #ddd;
 }
 
-.service-single:hover h5
+.project-single:hover h5
 {
     color: #fff;
 }
 
-.service-single:hover .service-icon
+.project-single:hover .project-icon
 {
     color: #333;
     background-color: #fff;
 }
 
-.service-single:hover .service-icon .fa
+.project-single:hover .project-icon .fa
 {
     transform:scale(1.2)rotateY(180deg);
+}
+
+
+/** Technical Skills Styles **/
+
+.technicals
+{
+    width: 90%;
+    height: 100%;
+    margin: 5px auto;
+    border: 2px solid rgba(234, 210, 59, 0.7);
+    border-radius: 10px;
+    margin-top: 50px;
+    color: #ddd;
+    z-index: -2;
+}
+
+.technicals::before
+{
+    position: absolute;
+    content: '';
+    z-index: -1;
 }
 
 
@@ -594,6 +508,7 @@ canvas
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-top: 50px;
     color: #ddd;
     z-index: -2;
 }
@@ -646,3 +561,30 @@ canvas
 {
     margin: 20px 0;
 }
+
+
+/** Footer Styles **/
+
+footer
+{
+    height: 80px;
+    background-color: rgb(33,37,41);
+    z-index: -1;
+}
+
+footer .container, footer .container .row
+{
+    height: 100%;
+}
+
+.back-to-top, .copyright
+{
+    height: 100%;
+    text-align: center;
+}
+
+.back-to-top, .copyright i, .copyright h7
+{
+    color: #fff;
+}
+

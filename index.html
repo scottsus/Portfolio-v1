@@ -13,13 +13,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Google Fonts and Font Awesome -->
+    <!-- Google Fonts, Font Awesome, Perfect Scrollbar -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
 
-    <!-- Respond.JS -->
+    <!-- Respond.JS, Perfect Scrollbar, Live JS -->
     <script src="js/respond.js"></script>
+    <script src="js/perfect-scrollbar.js"></script>
+    <style>
+        .ps__rail-x,
+        .ps__rail-y {
+            opacity: 0.6;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,320 +36,344 @@
         <img src="imgs/Bean Eater-0.4s-203px.gif" alt="pacman">
     </div>
 
-    <!-- Header Section -->
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg full-width">
-                    <a class="navbar-brand animate__animated animate__fadeInLeft" href="#">Scott Susanto</a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+    <!-- Perfect Scrollbar -->
+    <div id="forScrollbar" class="rounded">
+
+
+        <!-- Header Section -->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg full-width" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand animate__animated animate__fadeInLeft ms-5" href="#">Scott Susanto</a>
+                    <button type="button" class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#menu"
                         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="menu">
+                    <div class="collapse navbar-collapse animate__animated animate__fadeInRight me-5" id="menu">
                         <ul class="navbar-nav ms-auto animate__animated animate__fadeInRight">
                             <li class="nav-item active"><a href="#main" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                            <li class="nav-item"><a href="#technicals" class="nav-link">Technical Skills</a></li>
+                            <li class="nav-item"><a href="#myprojects" class="nav-link">My Projects</a></li>
                             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
                         </ul>
                     </div>
-
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <section class="main d-flex justify-content-center" id="main">
-        <div id="myparticles"></div>
-        <div class="main-content align-self-center">
-            <div class="welcome">Welcome</div>
-            <div class="type">I am <span class="mytext"></span></div>
-            <div class="social-icons">
-                <a href=""><i class="fa fa-github"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-            </div>
-
-            <a class="cta cta-portfolio" href="#">Portfolio</a>
-            <a class="cta cta-contact" href="#">Contact</a>
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section class="section-padding about" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <img src="imgs/Korea.jpeg" class="img-fluig" alt="about image">
                 </div>
-                <div class="col-md-7">
-                    <h3>About Me</h3>
-                    <h5>Web Developer & Graphics Designer</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi laudantium, dolore maxime
-                        quibusdam aspernatur impedit illo numquam ipsum delectus in eum perspiciatis fuga eveniet hic,
-                        eligendi cum! Earum, placeat.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eligendi doloribus
-                        molestiae dignissimos iste natus non ipsam. Similique autem perferendis nisi, a iusto quas sint
-                        sequi ratione cupiditate excepturi nostrum!
-                    </p>
-                    <div class="about-social-icons">
-                        <a href=""><i class="fa fa-github"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-google-plus"></i></a>
+            </nav>
+        </header>
+
+        <section class="main d-flex justify-content-center" id="main">
+            <div id="myparticles"></div>
+            <div class="main-content align-self-center">
+                <div class="welcome">Greetings</div>
+                <div class="type">I am <span class="mytext"></span></div>
+                <div class="social-icons">
+                    <a href=""><i class="fa fa-github"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parent Element for Centering -->
+        <div class="parent container">
+
+
+            <!-- About Section -->
+            <section class="section-padding about" id="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <img src="imgs/Korea.jpeg" class="img-fluig" alt="about image">
+                        </div>
+                        <div class="col-md-7">
+                            <h5>ABOUT ME</h5>
+                            <h3>Scott Susanto</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi laudantium,
+                                dolore
+                                maxime
+                                quibusdam aspernatur impedit illo numquam ipsum delectus in eum perspiciatis fuga
+                                eveniet
+                                hic,
+                                eligendi cum! Earum, placeat.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eligendi
+                                doloribus
+                                molestiae dignissimos iste natus non ipsam. Similique autem perferendis nisi, a iusto
+                                quas
+                                sint
+                                sequi ratione cupiditate excepturi nostrum!
+                            </p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa fa-github"></i></a>
+                                <a href=""><i class="fa fa-google-plus"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <a class="about-contact" href="#">Contact Me</a>
+                        </div>
                     </div>
-                    <a class="about-contact" href="#">Contact Me</a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
 
-    <!-- Technical Skills -->
-    <section class="section-padding exp-skills" id="technicals">
-        <svg viewBox="0 0 1400 80" class="svg-top">
-            <polygon points="0,80 200,0, 1200,0 1400,80 1400,0 0,0 0,80" style="fill:white" />
-        </svg>
+            <!-- Overview Section -->
+            <section class="section-padding overview-skills d-flex justify-content-center" id="overview">
+                <div class="container animate__animated animate__fadeInLeft">
+                    <h2 class="overview-header full-width text-center">Overview</h2>
+                    <div class="row">
+                        <div class="col-md-4 education">
+                            <h3 class="overview">Education</h3>
+                            <ul>
+                                <li>
+                                    <h5>Electrical Engineering and Computer Science</h5>
+                                    <div>
+                                        <strong>University of Southern California</strong>
+                                        <em>August 2021 - May 2023</em>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Computer Science and Mathematics</h5>
+                                    <div>
+                                        <strong>Pepperdine University</strong>
+                                        <em>August 2019 - May 2021</em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 experience">
+                            <h3 class="overview">Experience</h3>
+                            <ul>
+                                <li>
+                                    <h5>Full Stack Engineer</h5>
+                                    <div>
+                                        <strong>Snap Fitness Inc.</strong>
+                                        <em>May 2021 - July 2021</em>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Firefighting Commander</h5>
+                                    <div>
+                                        <strong>Sentosa Fire Station</strong>
+                                        <em>April 2017 - February 2019</em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 honors">
+                            <h3 class="overview">Honors</h3>
+                            <ul>
+                                <li>
+                                    <h5>Pepperdine University Seaver Scholar</h5>
+                                    <div>
+                                        <strong>Pepperdine University</strong>
+                                        <em>$40,000 annual scholarship, renewable for 4 years</em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-        <div class="container animate__animated animate__fadeInLeft">
-            <div class="row">
-                <div class="col-md-4 education">
-                    <h3 class="technicals">Education</h3>
-                    <ul>
-                        <li>
-                            <h5>Electrical Engineering and Computer Science</h5>
-                            <div>
-                                <strong>University of Southern California</strong>
-                                <em>August 2021 - May 2023</em>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Computer Science and Mathematics</h5>
-                            <div>
-                                <strong>Pepperdine University</strong>
-                                <em>August 2019 - May 2021</em>
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-                <div class="col-md-4 experience">
-                    <h3 class="technicals">Experience</h3>
-                    <ul>
-                        <li>
-                            <h5>Full Stack Engineer</h5>
-                            <div>
-                                <strong>Snap Fitness Inc.</strong>
-                                <em>May 2021 - July 2021</em>
-                            </div>
-                        </li>
-                        <li>
-                            <h5>Firefighting Commander</h5>
-                            <div>
-                                <strong>Sentosa Fire Station</strong>
-                                <em>April 2017 - February 2019</em>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 skills">
-                    <h3 class="technicals">Skills</h3>
-                    <ul>
-                        <li>
-                            <h6>Web Development</h6>
-                            <div class="progress-content">
-                                <div class="skill-progress" data-progress="80">
+            </section>
 
+            <!-- Technicals Section -->
+            <section class="technicals section-padding" id="technicals">
+                <div class="container">
+                    <div class="row section-header text-center">
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="row text-center">
+                        <h5>My First Choice</h5>
+                        <div class="first-choice">
+                            <img class="img-fluid logo" src="./imgs/logos/node-js.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/express.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/firebase.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/react-js.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/bootstrap.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/html.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/css.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/vscode.png" alt="" id="vscode">
+                            <img class="img-fluid logo" src="./imgs/logos/ejs.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/postman.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/mongo.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/heroku.png" alt="" id="heroku">
+                            <img class="img-fluid logo" src="./imgs/logos/ubuntu.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/github.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h5>I've used them before</h5>
+                        <div class="used-before">
+                            <img class="img-fluid logo" src="./imgs/logos/angular.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/next-js.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/figma.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/bulma.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/mysql.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/cloudinary.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h5>I know how to use them</h5>
+                        <div class="know-how">
+                            <img class="img-fluid logo" src="./imgs/logos/vue-js.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/postgresql.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="technicals-content">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- MyProjects Section -->
+            <section class="myprojects section-padding" id="myprojects">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-header text-center">
+                            <h3>My Projects</h3>
+                        </div>
+                    </div>
+                    <div class="myprojects-content">
+                        <div class="row">
+                            <div class="col-lg-4 text-center">
+                                <div class="project-single">
+                                    <div class="icon-container d-flex justify-content-center">
+                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                    </div>
+                                    <div class="project-name">
+                                        <h5>Web Design</h5>
+                                    </div>
+                                    <div class="project-description">There are many variations of passages of Lorem
+                                        Ipsum
+                                        available, but the majority have suffered alteration in some form, by injected
+                                        humor
+                                    </div>
                                 </div>
                             </div>
-                            <h6>Data Structures and Algorithms</h6>
-                            <div class="progress-content">
-                                <div class="skill-progress" data-progress="90">
-
+                            <div class="col-lg-4 text-center">
+                                <div class="project-single">
+                                    <div class="icon-container d-flex justify-content-center">
+                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                    </div>
+                                    <div class="project-name">
+                                        <h5>Web Design</h5>
+                                    </div>
+                                    <div class="project-description">There are many variations of passages of Lorem
+                                        Ipsum
+                                        available, but the majority have suffered alteration in some form, by injected
+                                        humor
+                                    </div>
                                 </div>
                             </div>
-                            <h6>Cybersecurity</h6>
-                            <div class="progress-content">
-                                <div class="skill-progress" data-progress="30">
-
+                            <div class="col-lg-4 text-center">
+                                <div class="project-single">
+                                    <div class="icon-container d-flex justify-content-center">
+                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                    </div>
+                                    <div class="project-name">
+                                        <h5>Web Design</h5>
+                                    </div>
+                                    <div class="project-description">There are many variations of passages of Lorem
+                                        Ipsum
+                                        available, but the majority have suffered alteration in some form, by injected
+                                        humor
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-            </div>
         </div>
 
-        <svg viewBox="0 0 1400 80" class="svg-bottom">
-            <polygon points="0,0 200,80, 1200,80 1400,0 1400,80 0,80 0,0" style="fill:white" />
-        </svg>
-    </section>
-
-
-    <!-- Services Section -->
-    <section class="services section-padding" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="section-header text-center">
-                    <h3>Services</h3>
-                </div>
-            </div>
-            <div class="services-content">
+        <!-- Contact Section -->
+        <section class="section-padding contact" id="contact">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
+                    <div class="section-header full-width text-center">
+                        <h3>Contact</h3>
+                    </div>
+                </div>
+                <div class="contact-top full-width text-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-location">
+                                <i class="fa fa-map-marker"></i>
+                                <h7>Address</h7>
+                                <p>325 W Adams Blvd, Los Angeles, CA 90007</p>
                             </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-email">
+                                <i class="fa fa-envelope"></i>
+                                <h7>Email</h7>
+                                <p>scottsus@usc.edu</p>
                             </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-phone">
+                                <i class="fa fa-phone"></i>
+                                <h7>Mobile Number</h7>
+                                <p>+1 (310) 715 - 9972</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
-                            </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
-                            </div>
+                </div>
+                <div class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="name">
+                                <h7>Name:</h7>
+                            </label>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="John Wick">
                         </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
-                            </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
-                            </div>
+                        <div class="col-md-6">
+                            <label for="email">Email:</label>
+                            <input class="form-control" type="text" id="email" name="email"
+                                placeholder="johnwick@excommunicado.usc.edu">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
-                            </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
-                            </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <label for="message">Leave a message for me!</label>
+                            <textarea class="form-control" name="message" id="message" style="height: 300px"
+                                placeholder="Let's start a new project Scott!"></textarea>
                         </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
-                            </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="service-single">
-                            <div class="icon-container d-flex justify-content-center">
-                                <h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Design</h5>
-                            </div>
-                            <div class="service-description">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humor
-                            </div>
-                        </div>
+                        <input type="submit" class="btn btn-primary" id="submit" value="Submit">
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-
-    <!-- Contact Section -->
-    <section class="section-padding contact" id="contact">
-        <svg viewBox="0 0 1400 80" class="svg-top">
-            <polygon points="0,80 200,0, 1200,0 1400,80 1400,0 0,0 0,80" style="fill:white" />
-        </svg>
-
-        <div class="container">
-            <div class="row">
-                <div class="section-header full-width text-center">
-                    <h3>Contact</h3>
-                </div>
-            </div>
-            <div class="contact-top full-width text-center">
-                <div class="row">
+        <footer>
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-md-4">
-                        <div class="contact-location">
-                            <i class="fa fa-map-marker"></i>
-                            <h7>Address</h7>
-                            <p>325 W Adams Blvd, Los Angeles, CA 90007</p>
-                        </div>
+                        <a href="#main">
+                            <h5 class="back-to-top">Back to Top</h5>
+                        </a>
                     </div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-4">
-                        <div class="contact-email">
-                            <i class="fa fa-envelope"></i>
-                            <h7>Email</h7>
-                            <p>scottsus@usc.edu</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="contact-phone">
-                            <i class="fa fa-phone"></i>
-                            <h7>Mobile Number</h7>
-                            <p>+1 (310) 715 - 9972</p>
+                        <div class="copyright">
+                            <i class="fa fa-copyright"></i>
+                            <h7>Built by Scott Susanto</h7>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="name">
-                            <h7>Name:</h7>
-                        </label>
-                        <input class="form-control" type="text" id="name" name="name" placeholder="John Wick">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email">Email:</label>
-                        <input class="form-control" type="text" id="email" name="email"
-                            placeholder="johnwick@excommunicado.usc.edu">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-floating">
-                        <label for="message">Leave a message for me!</label>
-                        <textarea class="form-control" name="message" id="message" style="height: 300px"
-                            placeholder="Let's start a new project Scott!"></textarea>
-                    </div>
-                    <input type="submit" class="btn btn-primary" id="submit" value="Submit">
-                </div>
-            </div>
-        </div>
-    </section>
+        </footer>
+    </div>
 
     <!-- JQuery, Bootstrap, Particle, TypedJS Scripts -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -1,5 +1,9 @@
 const doc = jQuery(document);
 
+// Initialize the plugin
+const demo = document.querySelector('#forScrollbar');
+const ps = new PerfectScrollbar(demo);
+
 $(window).on("load", function () {
     $('.loader').fadeOut(500);
 })
@@ -22,34 +26,14 @@ doc.ready(function () {
         currentClass: 'active'
     });
 
-    if ($(window).scrollTop() < 200) {
-        $('.navbar-nav').addClass('navbar-nav-bg');
-    }
 
     $(window).scroll(function () {
-        const top = $(window).scrollTop();
+        const scroll = $(window).scrollTop();
 
-        if (top >= 200) {
-            $('header').addClass('overlay');
-            $('.navbar-nav').removeClass('navbar-nav-bg');
-        } else if ($('header').hasClass('overlay')) {
-            $('header').removeClass('overlay');
+        if (scroll >= 200) {
+            $('.navbar').addClass('bg-dark');
         } else {
-            $('.navbar-nav').addClass('navbar-nav-bg');
+            $('.navbar').removeClass('bg-dark');
         }
     });
-
-    $('.progress-content .skill-progress').each(function () {
-        const waypoint = new Waypoint({
-            element: this,
-            handler: function (direction) {
-                const value = $(this.element).attr('data-progress');
-                $(this.element).css('width', '' + value + '%');
-            },
-            offset: '75%'
-        });
-    });
-
-
-
 });
