@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Scott Susanto</title>
 
     <!-- Bootstrap, Animate, and Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -49,7 +49,7 @@
                         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse animate__animated animate__fadeInRight me-5" id="menu">
+                    <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="menu">
                         <ul class="navbar-nav ms-auto animate__animated animate__fadeInRight">
                             <li class="nav-item active"><a href="#main" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -57,7 +57,8 @@
                             <li class="nav-item"><a href="#technicals" class="nav-link">Technical Skills</a></li>
                             <li class="nav-item"><a href="#myprojects" class="nav-link">My Projects</a></li>
                             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                            <li class="nav-item"><a target="_blank" href="./docs/Resume Spring 2022 Scott Susanto.pdf"
+                                    class="nav-link">Resume</a></li>
                         </ul>
                     </div>
                 </div>
@@ -69,11 +70,11 @@
             <div class="main-content align-self-center">
                 <div class="welcome">Greetings</div>
                 <div class="type">I am <span class="mytext"></span></div>
-                <div class="social-icons">
-                    <a href=""><i class="fa fa-github"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                <div class="social-icons container justify-content-center" container">
+                    <a target="_blank" href=""><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href=""><i class="fa fa-github"></i></a>
+                    <a target="_blank" href=""><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href=""><i class="fa fa-linkedin-square"></i></a>
                 </div>
             </div>
         </section>
@@ -87,7 +88,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-5">
-                            <img src="imgs/Korea.jpeg" class="img-fluig" alt="about image">
+                            <img class="img-fluid" src="imgs/Korea.jpeg" alt="about image">
                         </div>
                         <div class="col-md-7">
                             <h5>ABOUT ME</h5>
@@ -108,13 +109,7 @@
                                 sint
                                 sequi ratione cupiditate excepturi nostrum!
                             </p>
-                            <div class="social-icons">
-                                <a href=""><i class="fa fa-github"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                            <a class="about-contact" href="#">Contact Me</a>
+                            <a target="_blank" class="about-contact" href="#">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +118,7 @@
 
             <!-- Overview Section -->
             <section class="section-padding overview-skills d-flex justify-content-center" id="overview">
-                <div class="container animate__animated animate__fadeInLeft">
+                <div class="container">
                     <h2 class="overview-header full-width text-center">Overview</h2>
                     <div class="row">
                         <div class="col-md-4 education">
@@ -146,7 +141,7 @@
                             </ul>
                         </div>
                         <div class="col-md-4 experience">
-                            <h3 class="overview">Experience</h3>
+                            <h3 class="overview">Professional Experience</h3>
                             <ul>
                                 <li>
                                     <h5>Full Stack Engineer</h5>
@@ -156,22 +151,29 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <h5>Firefighting Commander</h5>
+                                    <h5>Research Intern</h5>
                                     <div>
-                                        <strong>Sentosa Fire Station</strong>
-                                        <em>April 2017 - February 2019</em>
+                                        <strong>Valero Labs, USC</strong>
+                                        <em>September 2021 - December 2021</em>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-4 honors">
-                            <h3 class="overview">Honors</h3>
+                            <h3 class="overview">Leadership</h3>
                             <ul>
                                 <li>
-                                    <h5>Pepperdine University Seaver Scholar</h5>
+                                    <h5>Beta Psi Omega Director of Memberships</h5>
                                     <div>
                                         <strong>Pepperdine University</strong>
-                                        <em>$40,000 annual scholarship, renewable for 4 years</em>
+                                        <em>August 2020 - May 2021</em>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>Firefighting Commander</h5>
+                                    <div>
+                                        <strong>Sentosa Fire Station</strong>
+                                        <em>April 2017 - February 2019</em>
                                     </div>
                                 </li>
                             </ul>
@@ -192,6 +194,7 @@
                         <div class="first-choice">
                             <img class="img-fluid logo" src="./imgs/logos/node-js.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/express.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/mongo.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/firebase.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/react-js.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/bootstrap.png" alt="">
@@ -200,7 +203,6 @@
                             <img class="img-fluid logo" src="./imgs/logos/vscode.png" alt="" id="vscode">
                             <img class="img-fluid logo" src="./imgs/logos/ejs.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/postman.png" alt="">
-                            <img class="img-fluid logo" src="./imgs/logos/mongo.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/heroku.png" alt="" id="heroku">
                             <img class="img-fluid logo" src="./imgs/logos/ubuntu.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/github.png" alt="">
@@ -214,14 +216,14 @@
                             <img class="img-fluid logo" src="./imgs/logos/figma.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/bulma.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/mysql.png" alt="">
-                            <img class="img-fluid logo" src="./imgs/logos/cloudinary.png" alt="">
-
+                            <img class="img-fluid logo" src="./imgs/logos/java-spring.png" alt="">
                         </div>
                     </div>
                     <div class="row text-center">
                         <h5>I know how to use them</h5>
                         <div class="know-how">
                             <img class="img-fluid logo" src="./imgs/logos/vue-js.png" alt="">
+                            <img class="img-fluid logo" src="./imgs/logos/django.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/postgresql.png" alt="">
 
                         </div>
@@ -243,49 +245,73 @@
                     <div class="myprojects-content">
                         <div class="row">
                             <div class="col-lg-4 text-center">
-                                <div class="project-single">
-                                    <div class="icon-container d-flex justify-content-center">
-                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                <a target="_blank" href="https://github.com/susantoscott/Fire-Blog">
+                                    <div class="project-single project-left">
+                                        <div class="icon-container d-flex justify-content-center">
+                                            <img class="img-fluid" src="imgs/fire-blog.JPG" alt="fire blog">
+                                        </div>
+                                        <div class="project-name">
+                                            <h5>Fire Blog</h5>
+                                        </div>
+                                        <div class="project-description">
+                                            <h7>
+                                                Creating a blog for users using Vercel.
+                                            </h7>
+                                        </div>
+                                        <div class="project-icons container justify-content-center">
+                                            <img class="img-fluid" src="./imgs/logos/next-js.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/react-js.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/firebase.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/vercel.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="project-name">
-                                        <h5>Web Design</h5>
-                                    </div>
-                                    <div class="project-description">There are many variations of passages of Lorem
-                                        Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humor
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-4 text-center">
-                                <div class="project-single">
-                                    <div class="icon-container d-flex justify-content-center">
-                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                <a target="_blank" href="http://stormy-savannah-38066.herokuapp.com/">
+                                    <div class="project-single project-middle">
+                                        <div class="icon-container d-flex justify-content-center">
+                                            <img class="img-fluid" src="imgs/yelp-camp.png" alt="fire blog">
+                                        </div>
+                                        <div class="project-name">
+                                            <h5>Yelp Camp</h5>
+                                        </div>
+                                        <div class="project-description">
+                                            <h7>
+                                                Full fledged web application that models Yelp to compare campgrounds
+                                                across
+                                                the United States.
+                                            </h7>
+                                        </div>
+                                        <div class="project-icons container justify-content-center">
+                                            <img class="img-fluid" src="./imgs/logos/node-js.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/express.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/mongo.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/ejs.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/bootstrap.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="project-name">
-                                        <h5>Web Design</h5>
-                                    </div>
-                                    <div class="project-description">There are many variations of passages of Lorem
-                                        Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humor
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-lg-4 text-center">
-                                <div class="project-single">
-                                    <div class="icon-container d-flex justify-content-center">
-                                        <h5 class="project-icon"><i class="fa fa-laptop"></i></h5>
+                                <a target="_blank" href="https://github.com/susantoscott/Task-Tracker">
+                                    <div class="project-single project-right">
+                                        <div class="icon-container d-flex justify-content-center">
+                                            <img class="img-fluid" src="imgs/task-tracker.png" alt="fire blog">
+                                        </div>
+                                        <div class="project-name">
+                                            <h5>Task Tracker</h5>
+                                        </div>
+                                        <div class="project-description">
+                                            Basic task tracker using React JS
+                                        </div>
+                                        <div class="project-icons container justify-content-center">
+                                            <img class="img-fluid" src="./imgs/logos/node-js.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/react-js.png" alt="">
+                                            <img class="img-fluid" src="./imgs/logos/bootstrap.png" alt="">
+                                        </div>
                                     </div>
-                                    <div class="project-name">
-                                        <h5>Web Design</h5>
-                                    </div>
-                                    <div class="project-description">There are many variations of passages of Lorem
-                                        Ipsum
-                                        available, but the majority have suffered alteration in some form, by injected
-                                        humor
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

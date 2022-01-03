@@ -1,6 +1,5 @@
 const doc = jQuery(document);
 
-// Initialize the plugin
 const demo = document.querySelector('#forScrollbar');
 const ps = new PerfectScrollbar(demo);
 

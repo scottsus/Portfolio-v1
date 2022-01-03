@@ -88,6 +88,11 @@ h1, h2, h3, h4, h5, h6
     width: 100%;
 }
 
+.img-fluid
+{
+    border-radius: 5px;
+}
+
 
 /** Header Styles **/
 
@@ -186,22 +191,22 @@ li.nav-item:last-child
 
 .fa-github
 {
-    color: rgb(173, 13, 147);
+    color: #662785;
 }
 
-.fa-google-plus
+.fa-linkedin-square
 {
-    color: rgb(240, 206, 54);
+    color:#0077B5;
 }
 
 .fa-facebook
 {
-    color:rgb(59, 59, 221);
+    color:#4867AA;
 }
 
-.fa-linkedin
+.fa-instagram
 {
-    color:rgb(59, 221, 221);
+    color: #F54C58;
 }
 
 .social-icons a i:hover
@@ -319,30 +324,12 @@ canvas
     font-size: 15px;
     font-weight: bold;
     display: inline-block;
-    margin-top: 40px;
-    position: relative;
-    overflow: hidden;
+    margin: 60px 0;
 }
 
-.about::after
+.about-contact
 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    content: '';
-    background-color: #333;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    z-index: -1;
-}
-
-.about-contact:hover::after
-{
-    left: 0;
+    color: #333;
 }
 
 
@@ -417,7 +404,35 @@ canvas
 
 .myprojects-content
 {
-    margin-top: 60px;
+    margin-top: 20px;
+}
+
+.project-single
+{
+    height: 600px;
+    border: 1px solid #ddd;
+    color: #333;
+    background-color: rgb(52,73,102);
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.project-left
+{
+    background-color: #ef476f;
+}
+
+.project-middle
+{
+    background-color: #ffd166;
+}
+
+.project-right
+{
+    background-color: #06d6a0;
 }
 
 .project-single .project-name
@@ -425,28 +440,35 @@ canvas
     margin: 30px 0;
 }
 
-.project-icon
+.project-single .project-icons
 {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    color: #fff;
-    background-color: #333;
-    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.project-icon .cta-contact::after
+.project-single .project-icons .img-fluid
 {
-    transform:scale(1)rotateY(0deg);
-    transition: all 0.5s ease;
+    height: 40px;
+    margin: 10px 20px;
 }
 
-.project-single
+.project-single .img-fluid
 {
-    border: 1px solid #ddd;
-    background-color: rgb(52,73,102);
-    padding: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 200px;
+}
+
+.project-single h5
+{
+    font-size: 30px;
+}
+
+.project-single h7
+{
+    display: block;
+    font-size: medium;
 }
 
 .myprojects-content .row:nth-child(2)
@@ -456,8 +478,8 @@ canvas
 
 .project-single:hover
 {
-    background-color: #333;
-    color: #ddd;
+    transform: scale(1.08);
+    transition: all 0.2s ease-in-out;
 }
 
 .project-single:hover h5
