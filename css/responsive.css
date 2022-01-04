@@ -16,15 +16,28 @@
         font-size: 40px;
     }
 
+    .about .img-fluid
+    {
+        margin-bottom: 40px;
+    }
+
+    #hello
+    {
+        font-size: 30px;
+    }
+
+    #signature
+    {
+        font-size: 40px;
+    }
+
     .project-single
     {
         margin-bottom: 40px;
     }
 
-    .about .img-fluid
-    {
-        margin-bottom: 40px;
-    }
+ 
+
 
     /** Disable animate.css on mobile devices **/
     .animate__animated {
