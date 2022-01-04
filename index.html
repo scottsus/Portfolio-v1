@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Google Fonts, Font Awesome, Perfect Scrollbar -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/perfect-scrollbar.css">
@@ -44,7 +45,7 @@
         <header id="header">
             <nav class="navbar navbar-expand-lg full-width" id="navbar">
                 <div class="container">
-                    <a class="navbar-brand animate__animated animate__fadeInLeft ms-5" href="#">Scott Susanto</a>
+                    <a class="navbar-brand animate__animated animate__fadeInLeft ms-5" href="#">苏学良</a>
                     <button type="button" class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#menu"
                         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -89,12 +90,11 @@
             <section class="section-padding about" id="about">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-5">
-                            <img class="img-fluid" src="imgs/Korea.jpeg" alt="about image">
+                        <div class="col-lg-5">
+                            <img class="img-fluid animate__animated left" src="imgs/Korea.jpeg" alt="about image">
                         </div>
-                        <div class="col-md-7">
-                            <h5>ABOUT ME</h5>
-                            <h3>Scott Susanto</h3>
+                        <div class="col-lg-7 animate__animated">
+                            <div class="hello"><span id="hello"></span></div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi laudantium,
                                 dolore
                                 maxime
@@ -111,6 +111,7 @@
                                 sint
                                 sequi ratione cupiditate excepturi nostrum!
                             </p>
+                            <p id="signature">Scott Susanto</p>
                             <a target="_blank" class="about-contact" href="#">Contact Me</a>
                         </div>
                     </div>
@@ -119,12 +120,12 @@
 
 
             <!-- Overview Section -->
-            <section class="section-padding overview-skills d-flex justify-content-center" id="overview">
+            <section class="section-padding overview d-flex justify-content-center" id="overview">
                 <div class="container">
                     <h2 class="overview-header full-width text-center">Overview</h2>
                     <div class="row">
-                        <div class="col-md-4 education">
-                            <h3 class="overview">Education</h3>
+                        <div class="col-lg-4 subheader education animate__animated left">
+                            <h3>Education</h3>
                             <ul>
                                 <li>
                                     <h5>Electrical Engineering and Computer Science</h5>
@@ -142,8 +143,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4 experience">
-                            <h3 class="overview">Professional Experience</h3>
+                        <div class="col-lg-4 subheader experience">
+                            <h3>Experience</h3>
                             <ul>
                                 <li>
                                     <h5>Full Stack Engineer</h5>
@@ -161,8 +162,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4 honors">
-                            <h3 class="overview">Leadership</h3>
+                        <div class="col-lg-4 subheader leadership animate__animated right">
+                            <h3>Leadership</h3>
                             <ul>
                                 <li>
                                     <h5>Beta Psi Omega Director of Memberships</h5>
@@ -180,18 +181,16 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
-                </div>
             </section>
 
             <!-- Technicals Section -->
             <section class="technicals section-padding" id="technicals">
                 <div class="container">
                     <div class="row section-header text-center">
-                        <h3>Technical Skills</h3>
+                        <h2>Technology Stack</h2>
                     </div>
-                    <div class="row text-center">
+                    <div class="row text-center first-box animate__animated left">
                         <h5>My First Choice</h5>
                         <div class="first-choice">
                             <img class="img-fluid logo" src="./imgs/logos/node-js.png" alt="">
@@ -202,7 +201,6 @@
                             <img class="img-fluid logo" src="./imgs/logos/bootstrap.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/html.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/css.png" alt="">
-                            <img class="img-fluid logo" src="./imgs/logos/vscode.png" alt="" id="vscode">
                             <img class="img-fluid logo" src="./imgs/logos/ejs.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/postman.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/heroku.png" alt="" id="heroku">
@@ -210,7 +208,7 @@
                             <img class="img-fluid logo" src="./imgs/logos/github.png" alt="">
                         </div>
                     </div>
-                    <div class="row text-center">
+                    <div class="row text-center second-box animate__animated right">
                         <h5>I've used them before</h5>
                         <div class="used-before">
                             <img class="img-fluid logo" src="./imgs/logos/angular.png" alt="">
@@ -219,18 +217,9 @@
                             <img class="img-fluid logo" src="./imgs/logos/bulma.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/mysql.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/java-spring.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <h5>I know how to use them</h5>
-                        <div class="know-how">
                             <img class="img-fluid logo" src="./imgs/logos/vue-js.png" alt="">
-                            <img class="img-fluid logo" src="./imgs/logos/django.png" alt="">
                             <img class="img-fluid logo" src="./imgs/logos/postgresql.png" alt="">
-
                         </div>
-                    </div>
-                    <div class="technicals-content">
                     </div>
                 </div>
             </section>
@@ -241,14 +230,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-header text-center">
-                            <h3>My Projects</h3>
+                            <h2>My Projects</h2>
                         </div>
                     </div>
                     <div class="myprojects-content">
                         <div class="row">
                             <div class="col-lg-4 text-center">
                                 <a target="_blank" href="https://github.com/susantoscott/Fire-Blog">
-                                    <div class="project-single project-left">
+                                    <div class="project-single project-left animate__animated left">
                                         <div class="icon-container d-flex justify-content-center">
                                             <img class="img-fluid" src="imgs/fire-blog.JPG" alt="fire blog">
                                         </div>
@@ -297,7 +286,7 @@
                             </div>
                             <div class="col-lg-4 text-center">
                                 <a target="_blank" href="https://github.com/susantoscott/Task-Tracker">
-                                    <div class="project-single project-right">
+                                    <div class="project-single project-right animate__animated right">
                                         <div class="icon-container d-flex justify-content-center">
                                             <img class="img-fluid" src="imgs/task-tracker.png" alt="fire blog">
                                         </div>
@@ -327,7 +316,7 @@
             <div class="container">
                 <div class="row">
                     <div class="section-header full-width text-center">
-                        <h3>Contact</h3>
+                        <h2>Contact</h2>
                     </div>
                 </div>
                 <div class="contact-top full-width text-center">
