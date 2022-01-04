@@ -63,7 +63,7 @@ doc.ready(function () {
         var elemTop = $(elem).offset().top;
         var elemBottom = elemTop + $(elem).height();
 
-        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        return (((elemBottom - 150) <= docViewBottom) && (elemTop - 110 >= docViewTop));
     };
 
     $(window).scroll(function () {
@@ -86,30 +86,6 @@ doc.ready(function () {
             } else {
                 $(this).removeClass('animate__fadeInLeft');
                 $(this).addClass('animate__fadeOutLeft');
-            }
-        })
-    });
-
-    $(window).scroll(function () {
-        $('.up').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).removeClass('animate__fadeOutDown');
-                $(this).addClass('animate__fadeInUp');
-            } else {
-                $(this).removeClass('animate__fadeInUp');
-                $(this).addClass('animate__fadeOutDown');
-            }
-        })
-    });
-
-    $(window).scroll(function () {
-        $('.down').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).removeClass('animate__fadeOutUp');
-                $(this).addClass('animate__fadeInDown');
-            } else {
-                $(this).removeClass('animate__fadeInDown');
-                $(this).addClass('animate__fadeOutUp');
             }
         })
     });

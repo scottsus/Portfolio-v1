@@ -49,7 +49,7 @@ body
 {
     font-family: 'Space Mono', monospace;
     font-size: 15px;
-    color: #FFF031;
+    color: #fff;
     background-color: #1D1D1D;
     line-height: 1.5;
 }
@@ -211,7 +211,7 @@ li.nav-item:last-child
 
 .fa-github
 {
-    color: #662785;
+    color: #ffd166;
 }
 
 .fa-linkedin-square
@@ -245,6 +245,7 @@ li.nav-item:last-child
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     color: #fff;
     text-align: center;
     position: relative;
@@ -448,7 +449,7 @@ canvas
     border-radius: 5px;
 }
 
-.logo
+.technicals .logo
 {
     width: 75px;
     margin: 10px 20px;
@@ -542,73 +543,23 @@ canvas
     font-size: medium;
 }
 
-.myprojects-content .row:nth-child(2)
-{
-    margin-top: 20px;
-}
-
 .project-single:hover
 {
     transform: scale(1.08);
     transition: all 0.2s ease-in-out;
 }
 
-.project-single:hover h5
+.project-single .project-icons .logo
 {
-    color: #fff;
-}
-
-.project-single:hover .project-icon
-{
-    color: #333;
-    background-color: #fff;
-}
-
-.project-single:hover .project-icon .fa
-{
-    transform:scale(1.2)rotateY(180deg);
+    width: 40px;
 }
 
 
 /** Contact Styles **/
 
-.contact
-{
-    position: relative;
-    background: url('imgs/contact-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 50px;
-    color: #ddd;
-    z-index: -2;
-}
-
-.contact h3
-{
-    color: #fff;
-}
-
-.contact:before
-{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(47, 54, 64, 0.85);
-    z-index: -1;
-}
-
 .contact-top, .contact-form
 {
     margin-top: 60px;
-}
-
-.contact i.fa
-{
-    margin-right: 10px;
 }
 
 .contact-top h7
@@ -616,21 +567,38 @@ canvas
     font-weight: bold;
 }
 
-.contact-form input, .form-floating textarea
+.contact i .fa
 {
-    width: 100%;
-    /* background-color: transparent; */
-    color: #ddd;
+    margin-right: 10px;
+}
+
+.contact-address
+{
+    color: #ef476f;
+}
+
+.contact-email
+{
+    color: #ffd166;
+}
+
+.contact-phone
+{
+    color: #06d6a0;
 }
 
 .contact-form label
 {
     font-weight: bold;
+    color: #00b4d8;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .form-floating textarea
 {
     margin: 20px 0;
+    display: inline-block;
 }
 
 

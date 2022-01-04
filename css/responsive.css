@@ -36,11 +36,8 @@
         margin-bottom: 40px;
     }
 
- 
-
-
     /** Disable animate.css on mobile devices **/
-    .animate__animated {
+     .animate__animated {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
 		-moz-transition-property: none !important;
@@ -76,5 +73,16 @@
     .main .type
     {
         font-size: 24px;
+    }
+
+    #hello
+    {
+        font-size: 20px;
+    }
+
+    .myprojects .project-icons .logo
+    {
+        width: 35px;
+        margin: 5px 5px;
     }
 }
