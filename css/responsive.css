@@ -37,7 +37,7 @@
     }
 
     /** Disable animate.css on mobile devices **/
-     .animate__animated {
+     .animate__animatedTest {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
 		-moz-transition-property: none !important;
