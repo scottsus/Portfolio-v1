@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scott Susanto</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
     <!-- Bootstrap, Animate, and Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -45,7 +47,8 @@
         <header id="header">
             <nav class="navbar navbar-expand-lg full-width" id="navbar">
                 <div class="container">
-                    <a class="navbar-brand animate__animated animate__fadeInLeft ms-5" href="#">苏学良</a>
+                    <a class="navbar-brand animate__animated animate__fadeInLeft ms-5" href="#"><img id="logo"
+                            src="imgs/ss.png" alt=""></a>
                     <button type="button" class="navbar-toggler me-5" data-bs-toggle="collapse" data-bs-target="#menu"
                         aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -85,13 +88,12 @@
         <!-- Parent Element for Centering -->
         <div class="parent container">
 
-
             <!-- About Section -->
-            <section class="section-padding about" id="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-5 first-image">
-                            <img class="img-fluid" src="imgs/Korea.jpeg" alt="about image">
+                            <img class="img-fluid" src="imgs/full-body.jpeg" alt="headshot">
                         </div>
                         <div class="col-lg-7 animate__animated">
                             <div class="hello"><span id="hello"></span></div>
@@ -112,7 +114,6 @@
                                 sequi ratione cupiditate excepturi nostrum!
                             </p>
                             <p id="signature">Scott Susanto</p>
-                            <a target="_blank" class="about-contact" href="#">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -120,76 +121,114 @@
 
 
             <!-- Overview Section -->
-            <section class="section-padding overview d-flex justify-content-center" id="overview">
+            <section class="overview d-flex justify-content-center" id="overview">
                 <div class="container">
                     <h2 class="overview-header full-width text-center">Overview</h2>
                     <div class="row">
-                        <div class="col-lg-4 subheader education animate__animated left">
+                        <div class="col-lg-4 subheader education animate__animated text-center">
                             <h3>Education</h3>
-                            <ul>
-                                <li>
-                                    <h5>Electrical Engineering and Computer Science</h5>
-                                    <div>
-                                        <strong>University of Southern California</strong>
-                                        <em>August 2021 - May 2023</em>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h5>Computer Science and Mathematics</h5>
-                                    <div>
-                                        <strong>Pepperdine University</strong>
-                                        <em>August 2019 - May 2021</em>
-                                    </div>
-                                </li>
-                            </ul>
+
+                            <div class="card shadow">
+                                <img src="imgs/usc.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">University of Southern California</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Computer
+                                            Science</strong></li>
+                                    <li class="list-group-item"><em>August 2021 - May 2023</em></li>
+                                </ul>
+                            </div>
+
+                            <div class="card shadow">
+                                <img src="imgs/pepperdine.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pepperdine University</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Computer Science</strong>
+                                    </li>
+                                    <li class="list-group-item"><em>August 2019 - May 2021</em></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-lg-4 subheader experience">
+
+                        <div class="col-lg-4 subheader experience text-center">
                             <h3>Experience</h3>
-                            <ul>
-                                <li>
-                                    <h5>Full Stack Engineer</h5>
-                                    <div>
-                                        <strong>Snap Fitness Inc.</strong>
-                                        <em>May 2021 - July 2021</em>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h5>Research Intern</h5>
-                                    <div>
-                                        <strong>Valero Labs, USC</strong>
-                                        <em>September 2021 - December 2021</em>
-                                    </div>
-                                </li>
-                            </ul>
+
+                            <div class="card shadow">
+                                <img src="imgs/viterbi.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">USC Viterbi School of Engineering</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>CSCI 103 Teaching
+                                            Assistant</strong>
+                                    </li>
+                                    <li class="list-group-item"><em>January 2021 - May 2021</em></li>
+                                </ul>
+                            </div>
+
+                            <div class="card shadow">
+                                <img src="imgs/snap-fitness.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Snap Fitness Inc.</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Full Stack Engineer</strong>
+                                    </li>
+                                    <li class="list-group-item"><em>May 2021 - July 2021</em></li>
+                                </ul>
+                            </div>
+
                         </div>
-                        <div class="col-lg-4 subheader leadership animate__animated right">
+                        <div class="col-lg-4 subheader leadership animate__animated text-center">
                             <h3>Leadership</h3>
-                            <ul>
-                                <li>
-                                    <h5>Beta Psi Omega Director of Memberships</h5>
-                                    <div>
-                                        <strong>Pepperdine University</strong>
-                                        <em>August 2020 - May 2021</em>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h5>Firefighting Commander</h5>
-                                    <div>
-                                        <strong>Sentosa Fire Station</strong>
-                                        <em>April 2017 - February 2019</em>
-                                    </div>
-                                </li>
-                            </ul>
+
+                            <div class="card shadow">
+                                <img src="imgs/beta-psi-omega.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beta Psi Omega Professional Fraternity</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Director of Memberships</strong>
+                                    </li>
+                                    <li class="list-group-item"><em>August 2020 - May 2021</em></li>
+                                </ul>
+                            </div>
+
+                            <div class="card shadow">
+                                <img src="imgs/Sentosa Fire Station.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sentosa Fire Station</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Firefighting Commander</strong>
+                                    </li>
+                                    <li class="list-group-item"><em>April 2017 - February 2019</em></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <a class="btn-custom-2 rounded-pill" id="overview-btn" href="#technicals">What's my tech
+                                stack?</a>
                         </div>
                     </div>
             </section>
 
             <!-- Technicals Section -->
-            <section class="technicals section-padding" id="technicals">
+            <section class="technicals" id="technicals">
                 <div class="container">
                     <div class="row section-header text-center">
                         <h2>Technology Stack</h2>
                     </div>
+
+                    <img src="imgs/laptop-red.jpg" alt="" class="img-fluid">
+
                     <div class="row text-center first-box animate__animated left">
                         <h5>My first choice</h5>
                         <div class="first-choice">
@@ -208,6 +247,7 @@
                             <img class="img-fluid logo" src="./imgs/logos/github.png" alt="">
                         </div>
                     </div>
+
                     <div class="row text-center second-box animate__animated right">
                         <h5>I've used them before</h5>
                         <div class="used-before">
@@ -221,18 +261,27 @@
                             <img class="img-fluid logo" src="./imgs/logos/java-spring.png" alt="">
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <a class="btn-custom-1 rounded-pill" id="technicals-btn" href="#myprojects">What projects
+                                have you done?</a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
 
             <!-- MyProjects Section -->
-            <section class="myprojects section-padding" id="myprojects">
+            <section class="myprojects" id="myprojects">
                 <div class="container">
                     <div class="row">
                         <div class="section-header text-center">
                             <h2>My Projects</h2>
                         </div>
                     </div>
+
                     <div class="myprojects-content">
                         <div class="row">
                             <div class="col-lg-4 text-center">
@@ -258,6 +307,7 @@
                                     </div>
                                 </a>
                             </div>
+
                             <div class="col-lg-4 text-center">
                                 <a target="_blank" href="http://stormy-savannah-38066.herokuapp.com/">
                                     <div class="project-single project-middle">
@@ -283,6 +333,7 @@
                                     </div>
                                 </a>
                             </div>
+
                             <div class="col-lg-4 text-center">
                                 <a target="_blank" href="https://github.com/susantoscott/Task-Tracker">
                                     <div class="project-single project-right animate__animated">
@@ -303,7 +354,16 @@
                                     </div>
                                 </a>
                             </div>
+
                         </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 d-flex justify-content-center">
+                                <a class="btn-custom-2 rounded-pill" id="myprojects-btn" href="#contact">Let's work
+                                    together!</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -311,65 +371,51 @@
         </div>
 
         <!-- Contact Section -->
-        <section class="section-padding contact" id="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-header full-width text-center">
                         <h2>Contact</h2>
                     </div>
                 </div>
-                <form action="mailto:scottsus@usc.edu" enctype="text/plain">
-                    <div class="contact-top full-width text-center">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="contact-address">
-                                    <i class="fa fa-map-marker"></i>
-                                    <h7>Address</h7>
-                                </div>
-                                <p>325 W Adams Blvd, Los Angeles, CA 90007</p>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="contact-email">
-                                    <i class="fa fa-envelope"></i>
-                                    <h7>Email</h7>
-                                </div>
-                                <p>scottsus@usc.edu</p>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="contact-phone">
-                                    <i class="fa fa-phone"></i>
-                                    <h7>Mobile Number</h7>
-                                </div>
-                                <p>+1 (310) 715 - 9972</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="name">
-                                    <h7>Name:</h7>
-                                </label>
-                                <input class="form-control" type="text" id="name" name="name" placeholder="John Wick">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email">Email:</label>
-                                <input class="form-control" type="text" id="email" name="email"
-                                    placeholder="johnwick@excommunicado.usc.edu">
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" name="message" id="message"
-                                        style="height: 300px"></textarea>
-                                </div>
-                                <button class="btn btn-primary">Submit</button>
+                <div class="contact-top full-width text-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-address">
+                                <i class="fa fa-map-marker"></i>
+                                <h7>Address</h7>
                             </div>
+                            <p>325 W Adams Blvd, Los Angeles, CA 90007</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-email">
+                                <i class="fa fa-envelope"></i>
+                                <h7>Email</h7>
+                            </div>
+                            <p>scottsus@usc.edu</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-phone">
+                                <i class="fa fa-phone"></i>
+                                <h7>Mobile Number</h7>
+                            </div>
+                            <p>+1 (310) 715 - 9972</p>
                         </div>
                     </div>
-                </form>
+                </div>
+
+                <div class="row d-flex align-items-center" id="contact">
+                    <div class="col-lg-6" id="contact-words">
+                        <h4>CONTACT ME</h4>
+                        <h6>Let me know if you want to collaborate on a project!</h6>
+                        <button class="btn-custom-1 rounded-pill">Let's work together!</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="imgs/black-robot.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
             </div>
         </section>
 

@@ -86,9 +86,37 @@ h1, h2, h3, h4, h5, h6
     color: #fff;
 }
 
-.section-padding
+.btn-custom-1
 {
-    padding: 20px 0;
+    padding: 20px 40px;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #4E5FFC;
+    border: 3px solid #4E5FFC;
+}
+
+.btn-custom-1:hover
+{
+    border: 3px solid #C0C8FF;
+}
+
+.btn-custom-2
+{
+    padding: 20px 40px;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #4E5FFC;
+    background-color: #ffffff;
+    border: 3px solid #4E5FFC;
+}
+
+.btn-custom-2:hover
+{
+    color: #ffffff;
+    background-color: #4E5FFC;
 }
 
 .full-width
@@ -101,9 +129,14 @@ h1, h2, h3, h4, h5, h6
     border-radius: 5px;
 }
 
-.overview, .technicals, .myprojects
+.overview, .myprojects
 {
     background-color: #1D1D1D;
+}
+
+.parent
+{
+    padding: 0;
 }
 
 
@@ -195,6 +228,11 @@ li.nav-item:last-child
     background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+#logo
+{
+    width: 30px;
+}
+
 
 /** Social Icons **/
 
@@ -241,7 +279,7 @@ li.nav-item:last-child
 {
     width: 100%;
     height: 100vh;
-    background: url(imgs/Sentosa\ Fire\ Station.jpeg);
+    background: url(imgs/skateboard-mount.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -333,9 +371,9 @@ canvas
     margin-bottom: 20px;
 }
 
-.about p
+.about #hello, .about p
 {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #signature
@@ -356,11 +394,12 @@ canvas
 .overview
 {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 5px auto;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color: #ddd;
+    background-color: #EDEDED;
 }
 
 .overview .container
@@ -370,8 +409,8 @@ canvas
 
 .overview-header
 {
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    color: #1D1D1D;
 }
 
 .overview .subheader
@@ -380,29 +419,62 @@ canvas
     margin-bottom: 20px;
 }
 
-.education h3, .education li h5
+.overview h3
+{
+    margin: 20px auto;
+}
+
+.education h3, .education h5
 {
     color: #ef476f;
 }
 
-.experience h3, .experience li h5
+.experience h3, .experience h5
 {
     color: #ffd166;
 }
 
-.leadership h3, .leadership li h5
+.leadership h3, .leadership h5
 {
     color: #06d6a0;
 }
 
-.overview strong, .overview em
+.overview .card, .overview img
 {
-    display: inline-block;
+    border-radius: 8px;
 }
 
-.overview h5
+.overview .card
 {
-    margin-top: 30px;
+    margin: 20px auto;
+    width: 330px;
+}
+
+.overview .subheader
+{
+    border-radius: 8px;
+}
+
+.overview .subheader:hover
+{
+    background-color: #1D1D1D;
+    color: #ffffff;
+}
+
+.overview .card h5
+{
+    margin: 0;
+    font-size: 20px;
+}
+
+.overview .card-img-top
+{
+    height: 200px;
+}
+
+.overview .card-body
+{
+    padding: 0 auto;
 }
 
 .overview ul
@@ -415,17 +487,32 @@ canvas
     color: #8e9aaf;
 }
 
+#overview-btn
+{
+    margin-bottom: 30px;
+}
+
 
 /** Technical Skills Styles **/
 
 .technicals
 {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    margin: 5px auto;
-    border-radius: 10px;
-    margin-top: 50px;
+    padding-bottom: 30px;
+    /* border-radius: 10px; */
     color: #ddd;
+    background-color: #000000;
+}
+
+.technicals .container
+{
+    margin-bottom: 30px;
+}
+
+.technicals h2
+{
+    margin-top: 20px;
 }
 
 .technicals h3
@@ -433,9 +520,9 @@ canvas
     margin-bottom: 50px;
 }
 
-.first-box, .second-box
+.first-box
 {
-    margin-top: 30px;
+    margin-top: -200px;
     margin-bottom: 50px;
 }
 
@@ -460,18 +547,28 @@ canvas
     background-color: #fff;
 }
 
+#technicals-btn
+{
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
 
 /** MyProjects Styles **/
 
 .myprojects
 {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    margin: 5px auto;
-    border-radius: 10px;
-    margin-top: 50px;
-    color: #ddd;
+    /* border-radius: 10px; */
+    background-color: #EDEDED;
+}
+
+.myprojects h2
+{
+    margin: 20px auto;
+    color: #1D1D1D;
 }
 
 .myprojects-content
@@ -482,29 +579,37 @@ canvas
 .project-single
 {
     height: 600px;
-    border: 1px solid #ddd;
-    color: #333;
-    background-color: rgb(52,73,102);
+    color: #ffffff;
     margin: 30px 0;
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     position: relative;
 }
 
 .project-left
 {
-    background-color: #ef476f;
+    /* background-color: #ef476f; */
+    background: url(imgs/fire.jpg);
+    background-position: center;
+    background-size: contain;
+
 }
 
 .project-middle
 {
-    background-color: #ffd166;
+    /* background-color: #ffd166; */
+    background: url(imgs/trees.jpg);
+    background-position: center;
+    background-size: contain;
 }
 
 .project-right
 {
-    background-color: #06d6a0;
+    /* background-color: #06d6a0; */
+    background: url(imgs/blue-tech.jpg);
+    background-position: center;
+    background-size: contain;
+
 }
 
 .project-single .project-name
@@ -519,6 +624,11 @@ canvas
     left: 0;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.project-single .project-icons:hover
+{
+    background-color: #ffffff;
 }
 
 .project-single .project-icons .img-fluid
@@ -554,12 +664,23 @@ canvas
     width: 40px;
 }
 
+#myprojects-btn
+{
+    margin-bottom: 30px;
+}
+
 
 /** Contact Styles **/
 
-.contact-top, .contact-form
+.contact-top
 {
     margin-top: 60px;
+    margin-bottom: -60px;
+}
+
+.contact h2
+{
+    margin: 20px auto;
 }
 
 .contact-top h7
@@ -587,18 +708,26 @@ canvas
     color: #06d6a0;
 }
 
-.contact-form label
+#contact-words
 {
-    font-weight: bold;
-    color: #00b4d8;
-    display: inline-block;
-    margin-bottom: 5px;
+    padding-left: 40px;
 }
 
-.form-floating textarea
+.contact h4
 {
-    margin: 20px 0;
-    display: inline-block;
+    font-size: 40px;
+    color: #ffba08;
+}
+
+.contact h6
+{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.contact .img-fluid
+{
+    width: 100%;
 }
 
 

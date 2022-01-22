@@ -36,6 +36,16 @@
         margin-bottom: 40px;
     }
 
+    .contact-top
+    {
+        margin-bottom: 30px;
+    }
+
+    .contact button
+    {
+        margin-bottom: -80px;
+    }
+
     /** Disable animate.css on mobile devices **/
      .animate__animatedTest {
 		/*CSS transitions*/
