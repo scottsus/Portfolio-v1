@@ -31,6 +31,11 @@
         font-size: 40px;
     }
 
+    .technicals .first-box
+    {
+        margin-top: 0px;
+    }
+
     .project-single
     {
         margin-bottom: 40px;
