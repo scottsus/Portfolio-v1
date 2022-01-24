@@ -725,6 +725,11 @@ canvas
     margin: 30px 0;
 }
 
+#contact-btn
+{
+    margin-top: 20px;
+}
+
 .contact .img-fluid
 {
     width: 100%;
