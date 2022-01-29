@@ -1,7 +1,8 @@
 const doc = jQuery(document);
 
-const demo = document.querySelector('#forScrollbar');
-const ps = new PerfectScrollbar(demo);
+// Perfect Scrollbar not working
+// const demo = document.querySelector('#forScrollbar');
+// const ps = new PerfectScrollbar(demo);
 
 $(window).on("load", function () {
     $('.loader').fadeOut(500);
@@ -14,7 +15,7 @@ doc.ready(function () {
 
     // I am...
     const typed = new Typed('.mytext', {
-        strings: ['Scott Susanto', 'a Full Stack Engineer', 'a USC Trojan'],
+        strings: ['Scott Susanto', 'a Full Stack Engineer', 'a Modern Visionary'],
         smartBackspace: true,
         loop: true,
         typeSpeed: 33,
@@ -89,4 +90,10 @@ doc.ready(function () {
             }
         })
     });
+
+    $('.card').hover(function () {
+        $(this).addClass('rgb');
+    }, function () {
+        $(this).removeClass('rgb');
+    })
 });

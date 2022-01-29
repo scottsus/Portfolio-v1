@@ -19,7 +19,7 @@ html, body, #forScrollbar, .main, .parent
 
 #forScrollbar
 {
-    /* position:absolute; */ /* This line disables other JS code */
+    position:absolute;
     top: 0px;
     bottom: 0px;
     right: 0px;
@@ -356,6 +356,41 @@ canvas
     margin-bottom: 20px;
 }
 
+#ambition, #imagination, #zeal, #skydiver, #runner, #snowboarder
+{
+    font-size: 17px;
+}
+
+#ambition
+{
+    color: #ff6b6b;
+}
+
+#imagination
+{
+    color: #ffe66d;
+}
+
+#zeal
+{
+    color: #4ecdc4;
+}
+
+#skydiver a
+{
+    color: #1565c0;
+}
+
+#runner
+{
+    color: #42a5f5;
+}
+
+#snowboarder
+{
+    color: #abc4ff;
+}
+
 .about img
 {
     width: 100%;
@@ -400,6 +435,8 @@ canvas
     /* border-radius: 10px; */
     color: #ddd;
     background-color: #EDEDED;
+    /* background: rgb(17,18,20);
+    background: linear-gradient(0deg, rgba(17,18,20,1) 0%, rgba(60,64,78,1) 100%); */
 }
 
 .overview .container
@@ -413,15 +450,43 @@ canvas
     color: #1D1D1D;
 }
 
-.overview .subheader
+.overview .body
 {
-    margin-top: 30px;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .overview h3
 {
-    margin: 20px auto;
+    margin: 25px auto;
+}
+
+.overview .card
+{
+    width: 85%;
+    height: 400px;
+    background-color: #1D1D1D;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    margin: 30px auto;
+    z-index: 6;
+}
+
+.overview .card-cover
+{
+    width: 100%;
+    height: 400px;
+    border-radius: 18px;
+    background-color: #1D1D1D;
+    z-index: 5;
+}
+
+.card img
+{
+    border-radius: 18px;
+    height: 180px;
+    width: 100%;
 }
 
 .education h3, .education h5
@@ -439,52 +504,69 @@ canvas
     color: #06d6a0;
 }
 
-.overview .card, .overview img
+.overview .card-text
 {
-    border-radius: 8px;
-}
-
-.overview .card
-{
-    margin: 20px auto;
-    width: 330px;
-}
-
-.overview .subheader
-{
-    border-radius: 8px;
-}
-
-.overview .subheader:hover
-{
-    background-color: #1D1D1D;
-    color: #ffffff;
-}
-
-.overview .card h5
-{
-    margin: 0;
-    font-size: 20px;
-}
-
-.overview .card-img-top
-{
-    height: 200px;
-}
-
-.overview .card-body
-{
-    padding: 0 auto;
+    margin-top: 40px;
 }
 
 .overview ul
 {
     list-style: none;
+    padding: 0;
+}
+
+.card li
+{
+    margin: 10px auto;
+}
+
+.card-text p
+{
+    margin-top: 30px;
+}
+
+.overview strong
+{
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .overview em
 {
     color: #8e9aaf;
+}
+
+.rgb::after
+{
+    content:"";
+    background: linear-gradient(45deg,
+    #ff0000 0%, 
+    #ff9a00 10%,
+    #d0de21 20%,
+    #4fdc4a 30%, 
+    #3fdad8 40%,
+    #2fc9e2 50%, 
+    #1c7fee 60%, 
+    #5f15f2 70%, 
+    #ba0cf8 80%, 
+    #fb07d9 90%, 
+    #ff0000 100%  )
+    repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(8px);
+    transform: translateZ(-5px);
+    z-index: -5;
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb
+{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
 #overview-btn
