@@ -15,7 +15,7 @@ doc.ready(function () {
 
     // I am...
     const typed = new Typed('.mytext', {
-        strings: ['Scott Susanto', 'a Full Stack Engineer', 'a Modern Visionary'],
+        strings: ['Scott Susanto', 'a Software Engineer', 'an Engineering Entrepreneur'],
         smartBackspace: true,
         loop: true,
         typeSpeed: 33,
